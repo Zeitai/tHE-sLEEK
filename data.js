@@ -247,3 +247,59 @@ const STUDIO_CREDIT = {
   name: "Avate Labs",
   url: "https://avateai.online",
 };
+
+/* ============================================================
+   SEASONAL OFFERS — powered by a Google Sheet.
+   1. Make a Google Sheet (use offers-template.csv as the start).
+   2. File → Share → Publish to web → pick the offers tab →
+      choose "Comma-separated values (.csv)" → Publish.
+   3. Paste the link it gives you between the quotes below.
+   The owner then edits the sheet; the site updates by itself.
+   ============================================================ */
+const OFFERS_CONFIG = {
+  sheetCsvUrl: "", // <-- paste the published CSV link here
+};
+
+/* Shown only when you open the site with  ?demo=offers  (for previewing the design) */
+const SAMPLE_OFFERS = [
+  {
+    title: "Festive Glow Facial",
+    description: "O3 Facial with de-tan and a relaxing head massage. Skin that's ready for every photo.",
+    price: 1499,
+    original: 2400,
+    badge: "Diwali Special",
+    valid: "2026-11-08",
+  },
+  {
+    title: "The Groom's Edit",
+    description: "Haircut, beard set and advance face massage, done together, one calm chair.",
+    price: 399,
+    original: 500,
+    badge: "Wedding Season",
+    valid: "2026-12-15",
+  },
+  {
+    title: "Bridal Booking Offer",
+    description: "Confirm your bridal makeup this season and enjoy a complimentary hair spa.",
+    price: 0,
+    original: 0,
+    badge: "Limited Slots",
+    valid: "2026-10-30",
+  },
+  {
+    title: "Nail Art Fridays",
+    description: "Gel polish with free nail art on any Friday visit.",
+    price: 149,
+    original: 199,
+    badge: "Weekly",
+    valid: "",
+  },
+];
+
+/* ============================================================
+   GOOGLE REVIEWS — "Rate us" section (QR + button)
+   ============================================================ */
+const REVIEW = {
+  url: "https://share.google/OscIGFFcPGwmO2L1X",
+  qr: "images/review-qr.png",
+};
